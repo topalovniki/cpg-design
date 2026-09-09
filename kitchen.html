@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#222222">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <title>Маси от масив | CPG Design</title>
+    <meta name="description" content="Трайни и стилни маси от естествено дърво, изработени по поръчка според вашето пространство.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">
+            <img src="logo.png" alt="CPG Design Logo" class="logo" width="52" height="52">
+            <div class="brand-text">
+                <h1 data-i18n="meta_title">CPG Design</h1>
+                <h3 data-i18n="header_title">Вашият дом и офис се нуждаят от нас.</h3>
+            </div>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Меню" aria-expanded="false" aria-controls="mainMenu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav>
+            <ul class="menu" id="mainMenu">
+                <li><a href="index.html#about" data-i18n="menu_about">За нас</a></li>
+                <li class="dropdown">
+                    <a href="index.html#gallery" data-i18n="menu_services">Продукти</a>
+                    <ul class="submenu">
+                        <li><a href="living.html" data-i18n="menu_living">Столове</a></li>
+                        <li><a href="kitchen.html" data-i18n="menu_kitchen">Маси</a></li>
+                        <li><a href="bedroom.html" data-i18n="menu_bedroom">Спални</a></li>
+                        <li><a href="office.html" data-i18n="menu_office">Офис мебели</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact" data-i18n="menu_contact">Контакти</a></li>
+                <li class="lang-switch">
+                    <button data-lang="bg">BG</button>
+                    <button data-lang="en">EN</button>
+                    <button data-lang="de">DE</button>
+                    <button data-lang="gr">GR</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1 data-i18n="kitchen_title">Маси от масив</h1>
+        <p data-i18n="kitchen_desc">Трайни и стилни маси от естествено дърво, изработени по поръчка според вашето пространство.</p>
+    </section>
+
+    <section>
+        <div class="gallery" id="kitchenGallery"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 CPG Design. <span data-i18n="footer_text">Всички права запазени.</span></p>
+    </footer>
+
+    <script src="languages/translations.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Снимките се зареждат само от локалната папка "kitchen"
+        const kitchenFiles = ["M1.jpg", "M2.jpg", "M3.jpg", "M4.jpg"];
+        buildGallery("kitchenGallery", "kitchen", kitchenFiles, "Маса от масив - CPG Design");
+    </script>
+</body>
+</html>
