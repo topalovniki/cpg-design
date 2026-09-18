@@ -2,7 +2,7 @@
 const CPG_CONFIG = {
   contactEmail: "topalovniki@gmail.com",
   phone: "+359887352008",
-  // Optional: if you use a form service, put its endpoint here.
-  // Example: https://formspree.io/f/xxxxxxxx
-  // formEndpoint: "topalovniki@gmail.com"
+  // FormSubmit receives the form and forwards it to the email above.
+  formEndpoint: "https://formsubmit.co/ajax/topalovniki@gmail.com"
 };
+
